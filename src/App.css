@@ -3,7 +3,7 @@ html, body {
   margin:0 auto;
   padding: 0;
   padding-top: 10px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
   text-align: center;
   width: 60%;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 button {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
   display: block;
   margin: 0 auto;
   border: none;
@@ -38,7 +38,7 @@ h1 {
 }
 
 textarea {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
   border: 3px solid black;
   width: 90%;
   /* margin: 10px auto; */
@@ -53,15 +53,16 @@ textarea {
   body {
     background: black;
     width: 95%;
-    height: 80%;
+    height: 100%;
   }
 
   .container {
-    height: 1000px;
+    height: 700px;
   }
 
   textarea {
     height: 450px;
+    padding: 10px 0;
     margin-bottom: 20px;
   }
 
@@ -70,16 +71,16 @@ textarea {
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 360px) and (max-width: 760px) {
   html,
   body {
     background: black;
-    width: 80%;
+    width: 100%;
   }
 
   .container {
     width: 370px;
-    height: 80%;
+    height: 70%;
     margin: 0;
     padding: 0;
   }
@@ -90,7 +91,34 @@ textarea {
 
   textarea { 
     height: 350px;
-    margin: 20px 0;
+    margin: 20px auto;
+    padding: 10px 0;
   }
   
+}
+
+@media screen and (max-width: 350px) {
+  html,
+  body {
+    background: black;
+    width: 100%;
+  }
+
+  .container {
+    width: 320px;
+    height: 40%;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    padding: 4rem 0;
+  }
+
+  textarea { 
+    height: 250px;
+    margin: 20px auto;
+    padding: 10px 0;
+  }
+
 }
