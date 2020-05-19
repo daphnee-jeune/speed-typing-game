@@ -12,6 +12,7 @@ body {
   font-weight: 400;
   background: grey;
 }
+
 .container {
   background: black;
   padding: 10px;
@@ -20,6 +21,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
+
 button {
   font-family: 'Press Start 2P', cursive;
   display: block;
@@ -44,4 +46,51 @@ textarea {
   height: 200px;
   background: #38cc8c;
   padding: 10px;
+}
+
+@media screen and (min-width: 768px) { 
+  html,
+  body {
+    background: black;
+    width: 95%;
+    height: 80%;
+  }
+
+  .container {
+    height: 1000px;
+  }
+
+  textarea {
+    height: 450px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  html,
+  body {
+    background: black;
+    width: 100%;
+  }
+
+  .container {
+    width: 370px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    padding: 4rem 0;
+  }
+
+  textarea { 
+    height: 350px;
+    margin: 20px 0;
+  }
+  
 }
